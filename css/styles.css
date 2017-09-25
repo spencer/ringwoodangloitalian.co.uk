@@ -57,3 +57,27 @@ a:hover {color: #03C;}
 @media (min-width: 1024px) {
   #site-header, #site-wrapper, #site-footer {width: 1024px; margin: 0 auto;}
 }
+
+.event {
+  background: #FEFEFE;
+  border: 1px solid #DDD;
+  color: #DDD;
+}
+
+.event h4 { color: #CCC; margin-bottom: 1em;}
+
+.upcoming { 
+  border: 1px solid transparent; 
+  background: transparent;
+  color: #444;
+}
+
+.upcoming h4 { color: #222;}
+
+.current {
+  padding: 1em;
+  margin-bottom: 1em;
+  border: 1px solid #D5F5E3;
+  background: #EAFAF1;
+  box-shadow: 0 0.5em 0.5em rgba(0, 0, 0, 0.2);
+}
