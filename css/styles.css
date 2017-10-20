@@ -59,25 +59,32 @@ a:hover {color: #03C;}
 }
 
 .event {
-  background: #FEFEFE;
+  padding: 0.5em; 
+  border-radius: 3px;
   border: 1px solid #DDD;
-  color: #DDD;
+  background: #FEFEFE;
+  color: #AAA;
+  margin-bottom: 0.5em;
+  font-size: 0.8125em
 }
 
-.event h4 { color: #CCC; margin-bottom: 1em;}
+.event h4 { color: #999; margin-bottom: 1em;}
+
+.event p {margin-bottom: 0}
 
 .upcoming { 
   border: 1px solid transparent; 
   background: transparent;
   color: #444;
+  font-size: 1em;
 }
 
 .upcoming h4 { color: #222;}
 
 .current {
   padding: 1em;
-  margin-bottom: 1em;
   border: 1px solid #D5F5E3;
   background: #EAFAF1;
   box-shadow: 0 0.5em 0.5em rgba(0, 0, 0, 0.2);
+  margin-bottom: 1.5em;
 }
