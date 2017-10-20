@@ -27,9 +27,4 @@ function compareDates(comparableEvent){
 if(typeof exports !== 'undefined') {
     exports.getEventDate = getEventDate;
     exports.compareDates = compareDates;
-// } else {
-    // function(){
-        // const events = document.querySelectorAll(".event");
-        // events.forEach(event => setStatus(event));
-    // }
 };

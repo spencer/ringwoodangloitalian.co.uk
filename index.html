@@ -160,8 +160,9 @@
   </div>
   <script>
     (function(){
-        const events = document.querySelectorAll(".event");
+        const events = document.querySelectorAll('.event');
         events.forEach(event => setStatus(event));
+        document.querySelector('.upcoming').classList.add('current')
     })();
   </script>
 </body>
