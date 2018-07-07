@@ -18,7 +18,7 @@
   "homepage": "https://github.com/spencer/ringwoodangloitalian.co.uk#readme",
   "dependencies": {
     "expect.js": "^0.3.1",
-    "mocha": "^4.0.1"
+    "mocha": "^4.1.0"
   },
   "devDependencies": {}
 }
