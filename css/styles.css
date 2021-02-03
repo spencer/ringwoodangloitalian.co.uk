@@ -29,35 +29,71 @@ a:hover {color: #03C;}
 
 .year-header {border-bottom: 1px solid #dcdcd0; margin-bottom: 7px; padding-bottom: 0.5em}
 
+#main-content {
+  display: grid;
+  grid-template-areas: 
+  "head"
+  "about"
+  "programme" 
+  "other"
+  "foot";
+}
+
+#site-header {grid-area: head}
+#about {grid-area: about;}
+#programme {grid-area: programme;}
+#contact {grid-area: other}
+.cadr {grid-area: foot}
+
 #site-header, #site-wrapper, #site-footer { margin: 0 auto; }
-#site-header { overflow: auto; text-align: center;}
+#site-header { text-align: center; }
 #site-header h1 {margin: 1em 0 ; text-shadow: 1px 1px 0 white;}
 
 .flag-colours {
-  height: 3px;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 5px;
   margin-bottom: 10px;
-  clear: both;
-  overflow: auto;
 }
 
 .last { margin-bottom: 0;}
 
-.red, .white, .green, .blue, .black { width: 8.33333333333333%; float: left; font-size: 3px;}
+.red, .white, .green, .blue, .black { font-size: 5px; flex-grow: 1;}
 .red {background: #d83d1f;}
 .white {background: white;}
 .green {background: #04a059;}
 .blue {background: #4f6eaf;}
 
+.cadr { 
+  padding: 2em; 
+  background: white; 
+  display: block; 
+  clear: both; 
+  border-top: 5px solid darkblue;
+  border-bottom: 5px solid rgb(200, 0, 0);
+  margin: 2em 0; 
+}
 #about, #contact, #programme, #site-header { padding: 0 1em; }
 
 @media (min-width: 640px) {
-  #site-header {text-align: left}
-  #site-header img { float: left; margin-right: 1em;}
-  #about, #contact {float: right; width: 40%; clear: none; border-left: 1px solid #dcdcd0;}
-  #programme {float: left; width: 60%; clear: none; }
+  #main-content {
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+    "head head"
+    "programme about"
+    "programme other"
+    "foot foot";
+    grid-template-columns: 2fr 1fr;
+  }
+  #site-header {display: flex; justify-content: start; width: 100%;}
 }
 @media (min-width: 1024px) {
-  #site-header, #site-wrapper, #site-footer {width: 1024px; margin: 0 auto;}
+  #main-content {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
 }
 
 .event {
