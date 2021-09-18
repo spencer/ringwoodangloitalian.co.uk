@@ -35,15 +35,23 @@ a:hover {color: #03C;}
   "head"
   "about"
   "programme" 
-  "other"
+  "sib-form"
+  "contact"
+  "address"
+  "map"
+  "pp"
   "foot";
 }
 
 #site-header {grid-area: head}
 #about {grid-area: about;}
 #programme {grid-area: programme;}
-#contact {grid-area: other}
-.cadr {grid-area: foot}
+#contact {grid-area: contact}
+#address{grid-area: address}
+#privacy-policy{grid-area: pp}
+#google-map{grid-area: map}
+#sib-form {grid-area:sib-form}
+#cadr {grid-area: foot}
 
 #site-header, #site-wrapper, #site-footer { margin: 0 auto; }
 #site-header { text-align: center; }
@@ -65,7 +73,7 @@ a:hover {color: #03C;}
 .green {background: #04a059;}
 .blue {background: #4f6eaf;}
 
-.cadr { 
+#cadr { 
   padding: 2em; 
   background: white; 
   display: block; 
@@ -74,20 +82,26 @@ a:hover {color: #03C;}
   border-bottom: 5px solid rgb(200, 0, 0);
   margin: 2em 0; 
 }
-#about, #contact, #programme, #site-header { padding: 0 1em; }
+#about, #contact, #programme, #site-header, #address, #google-map, #privacy-policy { padding: 0 1em; }
 
 @media (min-width: 640px) {
   #main-content {
     margin: 0 auto;
     display: grid;
     grid-template-areas: 
-    "head head"
-    "programme about"
-    "programme other"
-    "foot foot";
-    grid-template-columns: 2fr 1fr;
+    "head head head"
+    "programme programme sib-form"
+    "programme programme about"
+    "contact address map"
+    "pp pp pp"
+    "foot foot foot";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
   }
   #site-header {display: flex; justify-content: start; width: 100%;}
+
+  #about, #contact, #programme, #site-header, #address, #google-map, #privacy-policy { padding: 0; }
+  .sib-form {padding: 0}
 }
 @media (min-width: 1024px) {
   #main-content {
