@@ -48,7 +48,7 @@ a:hover {color: #03C;}
 #programme {grid-area: programme;}
 #contact {grid-area: contact}
 #address{grid-area: address}
-#privacy-policy{grid-area: pp}
+#pp {grid-area: pp}
 #google-map{grid-area: map}
 #sib-form {grid-area:sib-form}
 #cadr {grid-area: foot}
